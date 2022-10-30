@@ -1,0 +1,30 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, par l {seq {space :6:6:p, comp scrollPane1:::p:512:p}, comp label1:::p:175:p}, space ::17:x}}"
+			"$verticalGroup": "par l {seq l {space :p:15:p, comp label1:::p:35:p, space :::p, comp scrollPane1:::p:298:p, space ::24:x}}"
+		} ) {
+			name: "this"
+			"alwaysOnTop": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "show ParcelPost"
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "MS Reference Sans Serif", 0, 18 )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea1"
+					"font": new java.awt.Font( "Berlin Sans FB", 0, 16 )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 545, 420 )
+		} )
+	}
+}
